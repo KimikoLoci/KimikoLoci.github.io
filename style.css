@@ -1,0 +1,123 @@
+body {
+    margin: 0px;
+}
+
+header {
+    padding: 12px;
+    background-color: pink;
+    color: black;
+    text-align: center;
+    grid-area: header;
+}
+
+#sub-heading {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgba(237, 78, 139, 0.979);
+}
+
+#logo{
+    font-family: "Fredoka One";
+    }
+
+#logo {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#menu {
+    padding: 20px;
+    background-color: palevioletred;
+    grid-area: menue;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+#nav-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: cursive;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-ul > li a {
+    padding: 10px 20px;
+    margin: 16px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.navbutton {
+    padding: 12px;
+    color: azure;
+    border-radius: 10%;
+    display: inline-block;
+}
+
+
+#main-content {
+    padding: 32px;
+    grid-area: Main;
+    font-family: cursive;
+}
+footer {
+    padding: 16px;
+    background-color: pink;
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+    grid-area: footer;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "menue Main"
+    "footer footer"
+    ;
+    
+    grid-template-columns: 1fr 6fr;
+}
+
+#edit_info{
+    justify-content: center;
+    text-align: center;
+}
+
+.resize-by-dimensions {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+#footer-ul > div > li > a {
+    color: aliceblue;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 10px 20px;
+    margin: 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#footer-ul {
+    display: flex; 
+    list-style: none;
+    text-align: left;
+ }
